@@ -2,7 +2,6 @@ const storytext=document.getElementById("story-text");
 const choicesDiv=document.getElementById("choices");
 const restartbutton=document.getElementById("restart");
 
-//Story Nodes
 const storynodes = {
   start: {
     text: "You awaken, head throbbing, the taste of whiskey still on your tongue. The floor beneath you is sticky, and the air smells of dust and rain. The dim light sways on the ceiling above, casting an uneven light over the tavern. The room is eerily quiet. Where is everyone? You need to find out what happened.",
@@ -112,7 +111,6 @@ const storynodes = {
   }
 };
 
-//Start the game
 function startgame(node) {
   storytext.innerText = storynodes[node].text;
   choicesDiv.innerHTML = "";
