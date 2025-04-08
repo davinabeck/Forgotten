@@ -1,6 +1,6 @@
 const storytext=document.getElementById("story-text");
 const choicesDiv=document.getElementById("choices");
-const restartbutton=document.getElementById("restart");
+const restartbutton=document.getElementById("start-game");
 
 const storynodes = {
   start: {
@@ -123,4 +123,7 @@ function startgame(node) {
   });
 }
 
-startgame ("start");
+startButton.addEventListener("click", () => {
+  startButton.style.display = "none";
+  startgame("start");
+});
