@@ -127,7 +127,7 @@ function startgame(node) {
   });
 }
 
-restartButton.addEventListener("click", () => { // Fixed variable name
+restartButton.addEventListener("click", () => {
   restartButton.style.display = "none";
   startgame("start");
 });
